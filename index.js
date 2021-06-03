@@ -28,6 +28,6 @@ const servidor=http.createServer( (pedido,respuesta) => {
   });
 });
 
-servidor.listen(88);
+servidor.listen(80);
 
 console.log('Servidor web iniciado');
