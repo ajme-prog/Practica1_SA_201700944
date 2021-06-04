@@ -1,0 +1,8 @@
+#!/bin/sh
+
+  cd ~/Practica1_SA_201700944
+  git pull
+  npm install --production
+  forever restartall
+  exit
+EOF

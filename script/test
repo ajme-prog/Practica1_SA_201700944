@@ -1,3 +1,4 @@
 #!/bin/sh
- 
+
+cd ~/Practica1_SA_201700944 
 ./node_modules/.bin/mocha ./test/test.js
