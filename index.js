@@ -2,7 +2,7 @@ const http=require('http');
 const url=require('url');
 const fs=require('fs');
 
-const servidor=http.createServer( (pedido,respuesta) => {
+export const servidor=http.createServer( (pedido,respuesta) => {
   const objetourl = url.parse(pedido.url);
   let camino='static'+objetourl.pathname;
   if (camino=='static/')
