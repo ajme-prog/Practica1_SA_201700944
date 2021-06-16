@@ -2,8 +2,8 @@
   become: true
   tasks:
   - name: Install Packages
-    apt: name={{ item }} update_cache=yes state=latest
-    with_items:
+    apt: 
+      name:
       - build-essential
       - npm
       - nodejs-legacy
@@ -11,6 +11,8 @@
       - mcrypt
       - nginx
       - curl
+    state: present
+    autoclean: yes
 
   - name: Install pm2
     npm: name=pm2 global=yes production=yes
