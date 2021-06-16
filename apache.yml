@@ -2,8 +2,6 @@
  - hosts: webservers
    become: true
    tasks:
-      - name: Deploy static website
-        copy:
-          src: index.html
-          dest: /var/www/html
+      - name: Crear directorio temporal
+        shell: mkdir /tmp/repotemporal
   
