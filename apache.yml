@@ -3,5 +3,7 @@
    become: true
    tasks:
       - name: Crear directorio temporal
-        shell: mkdir /home/ubuntu/prueba
+        file: 
+          path: /home/ubuntu/holamundo
+          state: directory
   
