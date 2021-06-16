@@ -3,5 +3,5 @@
    become: true
    tasks:
       - name: Crear directorio temporal
-        shell: mkdir /tmp/repotemporal
+        shell: mkdir /home/ubuntu/prueba
   
