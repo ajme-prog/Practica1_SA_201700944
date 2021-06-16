@@ -1,6 +1,6 @@
 ---
  - hosts: webservers
-   sudo: yes
+   become: true
    tasks:
       - name: install packages
         yum:
