@@ -11,8 +11,8 @@
       - mcrypt
       - nginx
       - curl
-    state: present
-    autoclean: yes
+      state: present
+      autoclean: yes
 
   - name: Install pm2
     npm: name=pm2 global=yes production=yes
